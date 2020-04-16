@@ -28,6 +28,7 @@ footer {
 .singers ul{
     font-size: 20px;
     white-space: nowrap;
+    display: none;
 }
 .singers ul li{
     display: inline-block;
