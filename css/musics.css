@@ -1,5 +1,5 @@
 body {
-    margin: 60px auto;
+    margin: 100px auto;
     width: 70%;
     font-family: "微軟正黑體", "Arial", sans-serif;
 }
@@ -25,6 +25,13 @@ footer {
 .singers{
     font-size: 30px;
 }
+.singers a{
+    cursor: pointer;
+    display: block;
+}
+.singers a:hover{
+    background-color: rgb(180, 180, 180);
+}
 .singers ul{
     font-size: 20px;
     white-space: nowrap;
@@ -33,9 +40,23 @@ footer {
 .singers ul li{
     display: inline-block;
 }
+
+.webtitle{
+    margin-top: -100px;
+    width: 70%;
+    position: fixed;
+}
+.webname{
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    font-size: 30px;
+}
+
 .navbar {
-   overflow: hidden;
-   background-color: #333;
+    overflow: hidden;
+    background-color: #333;
 }
   
 .navbar a {
@@ -44,6 +65,7 @@ footer {
     color: white;
     text-align: center;
     padding: 14px 16px;
+    width: 100px;
     text-decoration: none;
 }
   
@@ -69,7 +91,8 @@ footer {
   
 .dropdown-content {
     display: none;
-    position: absolute;
+    position: fixed;
+    margin-top: 46px;
     background-color: #ccc;
 }
   
@@ -77,9 +100,9 @@ footer {
     display: block;
 }
   
-.column a {
+.dropdown-content a {
     padding: 14px 16px;
-    width: 100px;
+    /*width: 100px;*/
     float: none;
     color: black;
     text-decoration: none;
@@ -87,6 +110,6 @@ footer {
     text-align: center;
 }
   
-.column a:hover {
+.dropdown-content a:hover {
     background-color: #ddd;
 }
