@@ -19,9 +19,7 @@ footer {
     border-top: 1px solid #d5d5d5;
     font-size: 12px;
 }
-.blurb ul{
-    list-style: none;
-}
+
 .singers{
     font-size: 30px;
 }
@@ -36,6 +34,7 @@ footer {
     font-size: 20px;
     white-space: nowrap;
     display: none;
+    list-style: none;
 }
 .singers ul li{
     display: inline-block;
