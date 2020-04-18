@@ -1,5 +1,5 @@
 body {
-    margin: 60px auto;
+    margin: 100px auto;
     width: 70%;
     font-family: "微軟正黑體", "Arial", sans-serif;
 }
@@ -19,8 +19,16 @@ footer {
     border-top: 1px solid #d5d5d5;
     font-size: 12px;
 }
-.blurb ul{
+.sales ul{
     list-style: none;
+    display: none;
+}
+.sales a{
+    cursor: pointer;
+    display: block;
+}
+.sales a:hover{
+    background-color: rgb(180, 180, 180);
 }
 .images{
     width: 300px;
@@ -41,9 +49,23 @@ footer {
 .sales .games2 li{
     display: inline-block;
 }
+
+.webtitle{
+    margin-top: -100px;
+    width: 70%;
+    position: fixed;
+}
+.webname{
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    font-size: 30px;
+}
+
 .navbar {
-   overflow: hidden;
-   background-color: #333;
+    overflow: hidden;
+    background-color: #333;
 }
   
 .navbar a {
@@ -52,6 +74,7 @@ footer {
     color: white;
     text-align: center;
     padding: 14px 16px;
+    width: 100px;
     text-decoration: none;
 }
   
@@ -77,7 +100,8 @@ footer {
   
 .dropdown-content {
     display: none;
-    position: absolute;
+    position: fixed;
+    margin-top: 46px;
     background-color: #ccc;
 }
   
@@ -85,9 +109,9 @@ footer {
     display: block;
 }
   
-.column a {
+.dropdown-content a {
     padding: 14px 16px;
-    width: 100px;
+    /*width: 100px;*/
     float: none;
     color: black;
     text-decoration: none;
@@ -95,6 +119,6 @@ footer {
     text-align: center;
 }
   
-.column a:hover {
+.dropdown-content a:hover {
     background-color: #ddd;
 }
