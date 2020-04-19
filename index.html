@@ -35,8 +35,17 @@
 		</footer>
 		<script>
 			$(".switchbox").click(function(){
-				$("body").toggleClass("dark_mode");
-				$(".webname").toggleClass("dark_mode");
+				if(localStorage.click)
+				{
+					$("body").toggleClass("dark_mode");
+					$(".webname").toggleClass("dark_mode");
+				}
+				else
+				{
+					$("body").addClass("dark_mode");
+					$(".webname").addClass("dark_mode");
+					localStorage.click=1;
+				}
 			});
 		</script>
 	</body>
