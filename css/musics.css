@@ -96,7 +96,7 @@ footer {
 .dropdown-content {
     display: none;
     position: fixed;
-    margin-top: 50px;
+    margin-top: 49px;
     background-color: #ccc;
 }
 .dropdown:hover .dropdown-content {
@@ -104,7 +104,6 @@ footer {
 }
 .dropdown-content a {
     padding: 14px 16px;
-    /*width: 100px;*/
     float: none;
     color: black;
     text-decoration: none;
