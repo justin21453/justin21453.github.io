@@ -20,7 +20,7 @@
 				</div>
 				<div class="dark_switchbox">
 					<label>暗黑模式</label>
-					<input type="checkbox" class="switchbox" id="switchbox" onclick="change()">
+					<input type="checkbox" class="switchbox" id="switchbox">
 					<label for="switchbox" class="switchLabel">
 						<span class="switchCircle"></span>
 					</label>
@@ -34,21 +34,9 @@
 			</ul>
 		</footer>
 		<script>
-			$(document).ready(function(){
-				$("#switchbox").val(getCookie("check"));
-			});
-			$("#switchbox").change(function(){
-				if(this.checked)
-				{
-					$("body").addClass("dark_mode");
-					$(".webname").addClass("dark_mode");
-				}
-				else
-				{
-					$("body").removeClass("dark_mode");
-					$(".webname").removeClass("dark_mode");
-				}
-				setCookie("check", $("#switchbox").val());
+			$(".switchbox").click(function(){
+				$("body").toggleClass("dark_mode");
+				$(".webname").toggleClass("dark_mode");
 			});
 		</script>
 	</body>
