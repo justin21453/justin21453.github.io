@@ -38,21 +38,6 @@
 				$("body").toggleClass("dark_mode");
 				$(".webname").toggleClass("dark_mode");
 			});
-			var checked=$('input[id=switchbox]:checked');
-			checked.each(function (i) {
-				localStorage.setItem(i,$(this).val());
-				localStorage.setItem('length',i);
-
-			});
-
-			$(function () {
-				var length=localStorage.getItem('length');
-				for(var i=0;i<=length;i++){
-					var a=localStorage.getItem(i);
-					$("input:checkbox[value="+a+"]").attr("checked","checked");
-				}
-				localStorage.clear();
-			});
 		</script>
 	</body>
 </html>
