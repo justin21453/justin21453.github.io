@@ -34,26 +34,19 @@
 			</ul>
 		</footer>
 		<script>
-			$(document).ready(function(){
-				if($("#switchbox").prop("checked"))
+			$("#switchbox").change(function(){
+				if(this.checked)
 				{
 					$("body").addClass("dark_mode");
 					$(".webname").addClass("dark_mode");
-				}
-
-			});
-			$(".switchbox").click(function(){
-				if(localStorage.click)
-				{
-					$("body").toggleClass("dark_mode");
-					$(".webname").toggleClass("dark_mode");
 				}
 				else
 				{
-					$("body").addClass("dark_mode");
-					$(".webname").addClass("dark_mode");
-					localStorage.click=1;
+					$("body").removeClass("dark_mode");
+					$(".webname").removeClass("dark_mode");
 				}
+				if(!localStorage.change)
+					localStorage.change=1;
 			});
 		</script>
 	</body>
