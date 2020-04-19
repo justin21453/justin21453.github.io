@@ -76,7 +76,7 @@ footer {
 .dropdown-content {
     display: none;
     position: fixed;
-    margin-top: 46px;
+    margin-top: 48px;
     background-color: #ccc;
 }
 .dropdown:hover .dropdown-content {
