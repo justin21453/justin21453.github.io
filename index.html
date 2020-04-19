@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<title>孫運振的個人網站-首頁</title>
-		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 	</head>
 	<body>
 		<div class="webtitle">
@@ -18,6 +18,13 @@
 						<a href="/musics">音樂</a>
 					</div>
 				</div>
+				<div class="dark_switchbox">
+					<label>暗黑模式</label>
+					<input type="checkbox" class="switchbox" id="switchbox">
+					<label for="switchbox" class="switchLabel">
+						<span class="switchCircle"></span>
+					</label>
+				</div>
 			</div>
 		</div>
         	<h1>歡迎光臨孫運振的個人網站</h1>
@@ -26,5 +33,11 @@
         		<li><a href="https://github.com/justin21453">github</a></li>
 			</ul>
 		</footer>
+		<script>
+			$(".switchbox").click(function(){
+				$("body").toggleClass("dark_mode");
+				$(".webname").toggleClass("dark_mode");
+			})
+		</script>
 	</body>
 </html>
