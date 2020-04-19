@@ -34,6 +34,9 @@
 			</ul>
 		</footer>
 		<script>
+			$(document).ready(function(){
+				$("#switchbox").val(getCookie("check"));
+			});
 			$("#switchbox").change(function(){
 				if(this.checked)
 				{
@@ -45,10 +48,7 @@
 					$("body").removeClass("dark_mode");
 					$(".webname").removeClass("dark_mode");
 				}
-				if(localStorage.change)
-					localStorage.change=0;
-				else
-					localStorage.change=1;
+				setCookie("check", $("#switchbox").val());
 			});
 		</script>
 	</body>
