@@ -140,9 +140,17 @@
 			$(".sim a").click(function(){
 				$(".sim ul").toggle("slow");
 			});
-			$(".switchbox").click(function(){
-				$("body").toggleClass("dark_mode");
-				$(".webname").toggleClass("dark_mode");
+			$("#switchbox").change(function(){
+				if(this.checked)
+				{
+					$("body").addClass("dark_mode");
+					$(".webname").addClass("dark_mode");
+				}
+				else
+				{
+					$("body").removeClass("dark_mode");
+					$(".webname").removeClass("dark_mode");
+				}
 			});
 		</script>
 	</body>
